@@ -170,7 +170,7 @@
             </div>
             <div class="stat-card">
               <div class="stat-card-header">
-                <div class="stat-card-title"> Pending Payments</div>
+                <div class="stat-card-title"> Pending Challan</div>
                 <div class="stat-card-icon warning">
                   <span class="material-symbols-rounded"> payments</span>
                 </div>
@@ -350,6 +350,28 @@
   </div>
   <!-- Scripts -->
   <script src="script.js"></script>
+
+  <!-- Firebase -->
+   <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-analytics.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyAFyquxToXTKA6yw8k9AkwOXe9twYIysaI",
+    authDomain: "e-cad-c60e4.firebaseapp.com",
+    projectId: "e-cad-c60e4",
+    storageBucket: "e-cad-c60e4.firebasestorage.app",
+    messagingSenderId: "434244124889",
+    appId: "1:434244124889:web:6dabb20353fe52e3477ec8",
+    measurementId: "G-QWV83E9RSZ"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+  console.log("Firebase Connected");
+</script>
+
 </body>
 
 </html>
